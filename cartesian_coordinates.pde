@@ -1,9 +1,12 @@
+//Boundary values of the catresian view
 static class Bounds {
   static float minX = -20, maxX = 20, minY = -20, maxY = 20;
 
   static float midX = (minX + maxX)/2, midY = (minY + maxY)/2;
 }
 
+
+//Converting Coordinates
 float screen2cart_X(float screenX) {
   return map(screenX, 0, width, Bounds.minX, Bounds.maxX);
 }

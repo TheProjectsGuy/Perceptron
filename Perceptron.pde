@@ -12,10 +12,10 @@ void draw() {
   strokeWeight(0.25);
   for (float i = Bounds.minX; i <= Bounds.maxX; i += 1) {
     line(cart2screen_X(i), 0, cart2screen_X(i), height);
-  }
+  }  //Makes vertical lines
   for (float i = Bounds.minY; i <= Bounds.maxY; i += 1) {
     line(0, cart2screen_Y(i), width, cart2screen_Y(i));
-  }
+  }  //Makes horizontal lines
   //Cartesian Place (Coordinate axis)
   stroke(0);
   strokeWeight(1.5);
